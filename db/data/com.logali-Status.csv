@@ -1,0 +1,4 @@
+code,Criticality,name,descr
+O,2,Open,La orden está abierta y pendiente de procesamiento.
+A,3,Acepted,La orden fue aceptada y está en preparación.
+X,1,Rejected,La orden fue rechazada por motivos internos o del cliente.

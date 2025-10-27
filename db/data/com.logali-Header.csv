@@ -1,0 +1,4 @@
+ID,HeaderID,Email,Firstname,Lastname,Country_code,Creation,Deliverydate,Statu_code,Imageurl
+f47ac10b-58cc-4372-a567-0e02b2c3d479,11,john.doe@example.com,John,Doe,US,2025-09-01,2025-09-10T14:30,O,https://example.com/images/john.png
+c9bf9e57-1685-4c89-bafb-ff5af830be8a,12,jane.smith@example.com,Jane,Smith,US,2025-09-02,2025-09-12T09:00,A,https://example.com/images/jane.png
+3fa85f64-5717-4562-b3fc-2c963f66afa6,13,carlos.martin@example.com,Carlos,Martín,VE,2025-09-03,2025-09-15T16:45,X,https://example.com/images/carlos.png

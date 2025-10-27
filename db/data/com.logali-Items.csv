@@ -1,0 +1,5 @@
+ID,ItemsID,HeaderID_ID,Name,Description,Releasedate,Discontinueddate,Price,Height,Width,Depth,Quantity,Unitofmeasure
+a8098c1a-f86e-11da-bd1a-00112444be1e,21,f47ac10b-58cc-4372-a567-0e02b2c3d479,Monitor 24",Pantalla LED Full HD,2025-08-01,2026-01-01,199.99,35.50,55.00,10.00,5.000,pcs
+b4c0a1e2-3c2a-4f0e-9a6f-2f3b2d1e9c3f,22,f47ac10b-58cc-4372-a567-0e02b2c3d479,Teclado mecánico,Switches azules,2025-07-15,2026-02-15,89.50,5.00,45.00,3.00,10.000,pcs
+d1e2f3a4-5b6c-7d8e-9f01-23456789abcd,23,c9bf9e57-1685-4c89-bafb-ff5af830be8a,Mouse inalámbrico,Sensor óptico de alta precisión,2025-09-01,2026-03-01,49.99,4.00,10.00,3.00,15.000,pcs
+e3f4a5b6-c7d8-9e01-2345-6789abcdef01,24,3fa85f64-5717-4562-b3fc-2c963f66afa6,Webcam HD,Resolución 1080p con micrófono,2025-06-20,2025-12-31,79.00,6.00,8.00,5.00,8.000,pcs
