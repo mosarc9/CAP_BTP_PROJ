@@ -1,0 +1,24 @@
+{
+    "requires": {
+        "[dev]": {
+            "db": {
+                "kind": "sqlite",
+                "credentials": {
+                    "url": "salesorder.sqlite"
+                }
+            }
+        },
+        "[ps]": {
+            "db": {
+                "kind": "postgres",
+                "credentials": {
+                    "host": "localhost",
+                    "port": 9000,
+                    "user": "logali",
+                    "password": "logali",
+                    "db": "products"
+                }
+            }
+        }
+    }
+}
