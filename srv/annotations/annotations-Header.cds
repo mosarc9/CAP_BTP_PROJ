@@ -10,7 +10,7 @@ annotate service.Header with {
     country      @title: 'Country'     @Common.FieldControl: #Mandatory;
     Creation     @title: 'Creation Date';
     Statu        @title: 'Status';
-    Imageurl     @title: 'Image';
+    Imageurl     @title: 'Image'       @UI.IsImage;
     Deliverydate @title: 'Delivery Date';
 
 };
@@ -38,10 +38,10 @@ annotate service.Header with @(
             $Type: 'UI.DataField',
             Value: HeaderID
         },
-        // Description   : {
-        //     $Type: 'UI.DataField',
-        //     Value: Firstname
-        // },
+    // Description   : {
+    //     $Type: 'UI.DataField',
+    //     Value: Firstname
+    // },
     },
 
     UI.SelectionFields           : [
