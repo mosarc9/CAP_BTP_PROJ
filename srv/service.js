@@ -32,7 +32,6 @@ module.exports = class HeaderSrv extends cds.ApplicationService {
 
         this.before('NEW', Items.drafts, async (req) => {
             const headerId = req.data.HeaderID_ID;
-            console.log("XXXXXXXXXXXXXX", headerId);
             let tp2 = await SELECT.one.from(Items).columns('max(ItemsID) as Max2').where({HeaderID: headerId});
             let td2 = await SELECT.one.from(Items.drafts).columns('max(ItemsID) as Max2').where({HeaderID: headerId});
 
