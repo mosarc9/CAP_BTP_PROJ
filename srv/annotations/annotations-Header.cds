@@ -2,6 +2,18 @@ using {HeaderSrv as service} from '../service';
 
 annotate service.Header with @odata.draft.enabled;
 
+annotate service.Header with {
+    HeaderID     @title: 'ID'          @Common.FieldControl: #ReadOnly;
+    Email        @title: 'Email'       @Common.FieldControl: #Mandatory;
+    Firstname    @title: 'First Name'  @Common.FieldControl: #Mandatory;
+    Lastname     @title: 'Last Name'   @Common.FieldControl: #Mandatory;
+    country      @title: 'Country'     @Common.FieldControl: #Mandatory;
+    Creation     @title: 'Creation Date';
+    Statu        @title: 'Status';
+    Imageurl     @title: 'Image';
+    Deliverydate @title: 'Delivery Date';
+
+};
 
 annotate service.Header with {
     Statu   @Common: {
@@ -26,10 +38,10 @@ annotate service.Header with @(
             $Type: 'UI.DataField',
             Value: HeaderID
         },
-        Description   : {
-            $Type: 'UI.DataField',
-            Value: Firstname
-        },
+        // Description   : {
+        //     $Type: 'UI.DataField',
+        //     Value: Firstname
+        // },
     },
 
     UI.SelectionFields           : [
@@ -50,43 +62,35 @@ annotate service.Header with @(
             // },
             {
                 $Type: 'UI.DataField',
-                Label: 'Email',
                 Value: Email,
             },
             {
                 $Type: 'UI.DataField',
-                Label: 'Firstname',
                 Value: Firstname,
             },
             {
                 $Type: 'UI.DataField',
-                Label: 'Lastname',
                 Value: Lastname,
             },
             {
                 $Type: 'UI.DataField',
-                Label: 'Country',
                 Value: country_code,
             },
             {
                 $Type: 'UI.DataField',
-                Label: 'Creation',
                 Value: Creation,
             },
             {
                 $Type: 'UI.DataField',
-                Label: 'Deliverydate',
                 Value: Deliverydate,
             },
             {
                 $Type      : 'UI.DataField',
-                Label      : 'Status',
                 Value      : Statu_code,
                 Criticality: Statu.Criticality
             },
             {
                 $Type: 'UI.DataField',
-                Label: 'Imageurl',
                 Value: Imageurl,
             },
         ],
@@ -97,7 +101,7 @@ annotate service.Header with @(
         {
             $Type : 'UI.ReferenceFacet',
             ID    : 'GeneratedFacet1',
-            Label : 'General Information',
+            Label : 'Header Information',
             Target: '@UI.FieldGroup#GeneratedGroup',
         },
 
@@ -112,12 +116,10 @@ annotate service.Header with @(
     UI.LineItem                  : [
         {
             $Type: 'UI.DataField',
-            Label: 'HeaderID',
             Value: HeaderID,
         },
         {
             $Type                : 'UI.DataField',
-            Label                : 'Email',
             Value                : Email,
             ![@HTML5.CssDefaults]: {
                 $Type: 'HTML5.CssDefaultsType',
@@ -126,22 +128,18 @@ annotate service.Header with @(
         },
         {
             $Type: 'UI.DataField',
-            Label: 'Firstname',
             Value: Firstname,
         },
         {
             $Type: 'UI.DataField',
-            Label: 'Lastname',
             Value: Lastname,
         },
         {
             $Type: 'UI.DataField',
-            Label: 'Country',
             Value: country_code,
         },
         {
             $Type      : 'UI.DataField',
-            Label      : 'Status',
             Value      : Statu_code,
             Criticality: Statu.Criticality,
         },
