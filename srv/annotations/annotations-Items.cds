@@ -76,10 +76,6 @@ annotate service.Items with @(
                 $Type: 'UI.DataField',
                 Value: Quantity,
             },
-            // {
-            //     $Type: 'UI.DataField',
-            //     Value: Unitofmeasure,
-            // },
         ],
     },
 
